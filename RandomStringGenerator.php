@@ -22,4 +22,14 @@ class RandomStringGenerator
 	{
 		return $this->generatedStirng;
 	}
+
+	public function setStringHash($algo, $data)
+	{
+		$this->stringHash = hash($algo, $data);
+	}
+
+	public function getStringHash()
+	{
+		return $this->stringHash;
+	}
 }
