@@ -5,6 +5,11 @@ class RandomStringGenerator
 	private $generatedStirng = "";
 	private $characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+=/;:(){}[]!@#$%^&*-_|?<>";
 
+	public function setCharacters($characters)
+	{
+		$this->characters = $characters;
+	}
+
 	public function setRandomString($length=10)
 	{
 		$numOfCharacters = strlen($this->characters);
